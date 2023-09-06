@@ -70,6 +70,7 @@ def start_web3signer() -> Tuple[Optional[int], Optional[int]]:
         "--logging={}".format(LOG_LEVEL if LOG_LEVEL == "DEBUG" else "WARN"),
         "eth2",
         "--slashing-protection-enabled=false",
+        "--key-manager-api-enabled=true"
     ]
 
     _logger.debug("subprocess args: {}".format(subprocess_args))
