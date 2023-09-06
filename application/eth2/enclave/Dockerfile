@@ -1,7 +1,7 @@
 #  Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 #  SPDX-License-Identifier: MIT-0
 
-FROM consensys/web3signer:22.10-jdk11
+FROM consensys/web3signer:23.6-jdk11
 USER root
 
 RUN apt-get -y update && apt-get -y install python3 python3-pip net-tools
